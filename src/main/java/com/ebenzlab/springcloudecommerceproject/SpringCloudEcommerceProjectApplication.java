@@ -1,0 +1,13 @@
+package com.ebenzlab.springcloudecommerceproject;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringCloudEcommerceProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringCloudEcommerceProjectApplication.class, args);
+	}
+
+}
