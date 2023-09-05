@@ -36,7 +36,7 @@ public class ProductService {
         Map<String, Integer> inventoryLevels = new HashMap<>();
         List<ProductInventoryResponse> inventory = inventoryServiceClient.getProductInventoryLevels();
         for (ProductInventoryResponse item: inventory){
-            inventoryLevels.put(item.getProductCode(), item.getAvailableQuantity())
+            inventoryLevels.put(item.getProductCode(), item.getAvailableQuantity());
         }
         log.debug("inventoryLevels: {}" + inventoryLevels);
         return inventoryLevels;
