@@ -1,0 +1,30 @@
+spring:
+  config:
+    import: configserver:http://localhost:8888
+#  application:
+#    name: shoppingcart-ui
+#  cloud:
+#    gateway:
+#      locator:
+#         enabled: true
+#         lowercaseServiceId: true
+#      routes:
+#          - id: catalog-service
+#            uri: http://localhost:8181
+#            predicates:
+#             - path: /api/products/**
+#          - id: inventory-service
+#            uri: http://localhost:8282
+#            predicates:
+#             - path: /api/inventory/**
+#          - id: order-service
+#            uri: http://localhost:8383
+#            predicates:
+#             - path: /api/orders/**
+
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /ui
